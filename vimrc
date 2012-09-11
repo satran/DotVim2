@@ -64,6 +64,9 @@ set smartcase
 set hlsearch        "Highlight search things
 set incsearch
 
+" Set this for Commnd-T plugin to ignore hidden files.
+set wildignore+=*.pyc
+
 
 " ==================================================================================
 " GUI Settings
@@ -93,13 +96,6 @@ set clipboard+=unnamed
 " Hide .pyc in File browser and NERDTree
 let g:explHideFiles='^\.,.*.pyc$'
 let NERDTreeIgnore=['\.pyc$', '\~$', 'PYSMELLTAG']
-
-" Hiding hidden files in Ctrl-p plugin
-let g:ctrlp_dotfiles = 1
-  let g:ctrlp_custom_ignore = {
-    \ 'dir':  '\.git$\|\.hg$\|\.svn$',
-    \ 'file': '\.pyc$\|\.so$\|\.dll$',
-    \ }
 
 
 "Setting for the File Browser
@@ -190,10 +186,11 @@ map <leader>j :RopeGotoDefinition<CR>
 map <C-g> <Esc>:RopeGotoDefinition<CR>
 
 " Command-t
-map <leader>t :CtrlP<CR>
+map <leader>t :CommandT<CR>
+map <C-t> :CommandT<CR>
 
 " Command-b
-map <leader>b :CtrlPBuffer<CR>
+map <leader>b :CommandTBuffer<CR>
 
 " Command-/
 map <D-/> <Esc>gcc<CR>
