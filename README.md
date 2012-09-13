@@ -19,48 +19,13 @@ The best way would be to clone the entire repoistory to your home directory's .v
 
     mv ~/.vim ~/.vim-backup
     cd ~
-    git clone git@github.com:satyajitranjeev/Dotvim.git .vim
+    git clone  --recursive git://github.com/satyajitranjeev/DotVim2.git
 
     # OR if you don't have not registered with git
 
-    git clone https://satyajitranjeev@github.com/satyajitranjeev/Dotvim.git
+    git clone --recursive https://github.com/satyajitranjeev/DotVim2.git
 
 ####Symbolic link for .vimrc
 Make a symbolic link of the .vim/vimrc file to the home directory.
 
     ln -s ~/.vim/vimrc ~/.vimrc
-
-####Clone sub-modules
-Clone all the sub-modules:
-
-    cd ~/.vim
-    bash vim-git-script.sh
-
-
-
-
-###Mappings for various commands
-
-The leader is set to ,   
-
-    | Mapping           |  Description                                   |  
-    |:------------------|:-----------------------------------------------|  
-    | <leader>n         |  toggles NERDTree Explorer                     |  
-    | <leader>p         |  opens Google Chrome in Mac                    |  
-    | <leader>md        |  opens Mou in Mac                              |  
-    | CDM+i             |  opens iTerm                                   |  
-    | <leader>nn        |  next buffer                                   |  
-    | <leader>nb        |  previous buffer                               |  
-    | <leader>g         |  Toggles Gundo                                 |  
-    | <leader>j         |  Jump to definition using Rope                 |  
-    | CTRL+j            |  Jump to definition using Rope                 |  
-    | F4                |  Tlist toggle                                  |  
-    | <leader>t         |  toggles CommandT plugin                       |  
-    | CMD+t             |  toggles CommandT plugin                       |   
-    | CMD+/             |  comments line                                 |  
-    | ;;                |  Esc                                           |  
-    | <leader>x         |  closes current window                         |  
-    | CTRL+d            |  inserts python pdb.set_trace() in the code    |  
-
-*
-:For some reason GitHub does not recognize tables using markdown. So if you can't read this just open the md in vim.*
