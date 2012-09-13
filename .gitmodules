@@ -37,3 +37,6 @@
 [submodule "bundle/color_highlight"]
 	path = bundle/color_highlight
 	url = https://github.com/chrisbra/color_highlight.git
+[submodule "bundle/vim-ipython"]
+	path = bundle/vim-ipython
+	url = https://github.com/ivanov/vim-ipython.git
