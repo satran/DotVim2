@@ -5,6 +5,8 @@ set nocompatible 		" Don't be compatible with vi
 " ==================================================================================
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 filetype off
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 call pathogen#infect()
 Helptags
 
@@ -65,7 +67,7 @@ set hlsearch        "Highlight search things
 set incsearch
 
 " Set this for Commnd-T plugin to ignore hidden files.
-set wildignore+=*.pyc
+set wildignore+=*.pyc,*.png,*.jpg,*.jpeg,*.gif
 
 
 " ==================================================================================
@@ -253,6 +255,10 @@ nnoremap <right> <nop>
 " Making titles for markdown
 nnoremap <leader>= <Esc>^yyp^vg_r=<CR>
 nnoremap <leader>- <Esc>^yyp^vg_r-<CR>
+
+" Starting IPython plugin
+let g:monitor_subchannel=1
+nnoremap <leader>i :source $HOME/.vim/bundle/vim-ipython/ftplugin/python/ipy.vim<CR>:IPython<CR>
 
 " ==================================================================================
 " Auto Commands
