@@ -61,12 +61,10 @@ map <C-/> <Esc>gcc<CR>
 " Disable search highlight
 map <leader><space> :nohl<CR>
 
-" Map tp regenerate tags on the fly. Python specific
-nnoremap <F8> :!/opt/local/bin/ctags -R --python-kinds=-i *.py<CR>
-" Toggle Tlist
-nnoremap <F4> :TlistToggle<CR>
+" Map F8 to Toggle tags.
+noremap <F8> <Esc>:TagbarToggle<CR>
 
-nnoremap <C-w> <Esc>:bd<CR>
+nnoremap <C-q> <Esc>:bd<CR>
 
 " Map right command key to Esc
 inoremap ;; <Esc>
