@@ -6,12 +6,13 @@ filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 call pathogen#infect()
+Helptags    " Load the help tags
 
 syntax on
 filetype on
 filetype plugin indent on
 
-colorscheme Tomorrow-Night
+colorscheme Tomorrow-Night-Eighties
 
 " Source the respective files. This works only for UNIX and Linux systems not
 " Windows.
