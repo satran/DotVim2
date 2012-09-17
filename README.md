@@ -29,3 +29,20 @@ The best way would be to clone the entire repoistory to your home directory's .v
 Make a symbolic link of the .vim/vimrc file to the home directory.
 
     ln -s ~/.vim/vimrc ~/.vimrc
+
+Do remember to change a few variables and comment out lines to make it work for your needs.
+
+In line 80 of `variables.vim` do set the ctags to the right path, or delete the line.
+Comment out line 23 of `vimrc` to disable all Mac related settings.
+You can chose your color scheme by changing line 15 in `vimrc`. Available color schemes are:
+
+    Tomorrow-Night-Blue
+    Tomorrow-Night-Bright
+    Tomorrow-Night-Eighties [default]
+    Tomorrow-Night
+    Tomorrow
+    cloudsxterm
+    espresso-soda
+    rdark-terminal
+    rdark
+    tutticolori
