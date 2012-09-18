@@ -64,6 +64,7 @@ map <leader><space> :nohl<CR>
 " Map F8 to Toggle tags.
 noremap <F8> <Esc>:TagbarToggle<CR>
 
+" Close the current buffer.
 nnoremap <C-q> <Esc>:bd<CR>
 
 " Map right command key to Esc
