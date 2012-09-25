@@ -13,6 +13,9 @@ set encoding=utf-8
 " Setting global clipboard
 set clipboard+=unnamed
 
+" Set line highlight
+set cursorline
+
 set noerrorbells " don't make noise
 set ofu=syntaxcomplete
 
