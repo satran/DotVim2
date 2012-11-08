@@ -12,7 +12,9 @@ syntax on
 filetype on
 filetype plugin indent on
 
-colorscheme Tomorrow-Night-Eighties
+" set background=dark
+colorscheme Tomorrow
+" colorscheme Tomorrow-Night
 
 " Source the respective files. This works only for UNIX and Linux systems not
 " Windows.
