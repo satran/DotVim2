@@ -1,4 +1,4 @@
-" ==================================================================================
+
 " Basic Settings
 " ==================================================================================
 set pastetoggle=<F3>			"turn off auto-indent when pasting text
@@ -9,9 +9,10 @@ set wrap    " Wrapping without line break and in words instead of letters
 set formatoptions+=l
 set lbr
 set encoding=utf-8
+set fileformat=unix
 
 " Setting global clipboard
-set clipboard+=unnamed
+set clipboard=unnamed
 
 " Set line highlight
 set cursorline
@@ -68,9 +69,6 @@ endif
 " Status Line mode
 set laststatus=2
 
-" Setting the clipboard to the global clipboard
-set clipboard+=unnamed
-
 " Hide .pyc in File browser and NERDTree
 let g:explHideFiles='^\.,.*.pyc$'
 let NERDTreeIgnore=['\.pyc$', '\~$', 'PYSMELLTAG']
@@ -81,3 +79,14 @@ let g:netrw_list_hide         = '.*\.pyc,.DS_Store,.git,.ropeproject'
 
 " Ctags for Tagbar
 let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
+
+" Fancy symbols for powerline.
+" let g:Powerline_symbols = 'fancy'
+" let g:Powerline_theme = 'skwp'
+" let g:Powerline_colorscheme = 'skwp'
+let g:Powerline_symbols_override = {
+            \ 'LINE': 'L',
+            \ }
+let g:Powerline_mode_n = 'N'
+let g:Powerline_mode_i = 'I'
+" let g:Powerline_dividers_override = ['◗', '◗', '◖', '◖']
