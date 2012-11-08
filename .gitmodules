@@ -22,9 +22,6 @@
 [submodule "bundle/rope-vim"]
 	path = bundle/rope-vim
 	url = https://github.com/klen/rope-vim.git
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
 [submodule "bundle/gundo"]
 	path = bundle/gundo
 	url = https://github.com/sjl/gundo.vim.git
