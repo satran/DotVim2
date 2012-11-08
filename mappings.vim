@@ -68,7 +68,8 @@ noremap <F8> <Esc>:TagbarToggle<CR>
 nnoremap <C-q> <Esc>:bd<CR>
 
 " Map right command key to Esc
-inoremap ;; <Esc>
+" inoremap ;; <Esc>
+" inoremap jk <Esc>
 "inoremap <Esc> <nop>
 
 " Moving forward in insert mode like Emacs
@@ -111,3 +112,12 @@ nnoremap <right> <nop>
 " Making titles for markdown
 nnoremap <leader>= <Esc>^yyp^vg_r=<CR>
 nnoremap <leader>- <Esc>^yyp^vg_r-<CR>
+
+" Opens the current directory.
+nnoremap <leader>d :e .<CR>
+
+" Sets colorcolumn to 80 characters.
+noremap <leader>8 :set colorcolumn=80<CR>
+
+" Toggle solarized background
+call togglebg#map("<F5>")
