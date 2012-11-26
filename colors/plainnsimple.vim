@@ -9,17 +9,16 @@ if version > 580
  endif
 endif
 let colors_name = "plainnsimple"
-hi Normal guifg=white guibg=#002833
+hi Normal guifg=white guibg=#002833 ctermfg=white
 hi Cursor guibg=white guifg=black
 " hi CursorLine gui=underline guibg=NONE cterm=underline ctermbg=NONE
 hi CursorLine gui=none guibg=#003540 cterm=none ctermbg=black
 hi VertSplit guibg=NONE guifg=grey gui=NONE cterm=none ctermbg=none ctermfg=grey
 hi IncSearch guifg=black guibg=white cterm=none ctermfg=black ctermbg=white
-hi NonText guifg=grey guibg=NONE cterm=bold ctermfg=grey
+hi NonText guifg=#333 guibg=NONE cterm=bold ctermfg=235
 hi Search guibg=yellow guifg=black cterm=none ctermfg=black ctermbg=yellow
-hi SpecialKey guifg=yellowgreen ctermfg=darkgreen
 hi StatusLine guibg=white guifg=black gui=none cterm=none ctermbg=white ctermfg=black
-hi StatusLineNC guibg=white guifg=black gui=none cterm=none ctermbg=white ctermfg=black
+" hi StatusLineNC guibg=white guifg=black gui=none cterm=none ctermbg=white ctermfg=black
 hi Visual gui=none guifg=black guibg=grey cterm=reverse
 hi String guifg=SkyBlue ctermfg=green
 hi Comment term=bold ctermfg=11 guifg=grey40 ctermfg=grey
