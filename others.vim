@@ -1,6 +1,8 @@
 " ==================================================================================
 " Auto Commands
 " ==================================================================================
+" Setting ghc as the haskell compiler. Make sure ghc is in the PATH
+" au BufEnter *.hs compiler ghc
 
 " Source the vimrc file after saving it
 augroup vimrc
