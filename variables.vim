@@ -1,4 +1,3 @@
-
 " Basic Settings
 " ==================================================================================
 set pastetoggle=<F3>			"turn off auto-indent when pasting text
@@ -80,13 +79,13 @@ let g:netrw_list_hide         = '.*\.pyc,.DS_Store,.git,.ropeproject'
 " Ctags for Tagbar
 let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
 
-" Fancy symbols for powerline.
-" let g:Powerline_symbols = 'fancy'
-" let g:Powerline_theme = 'skwp'
-" let g:Powerline_colorscheme = 'skwp'
-let g:Powerline_symbols_override = {
-            \ 'LINE': 'L',
-            \ }
-let g:Powerline_mode_n = 'N'
-let g:Powerline_mode_i = 'I'
-" let g:Powerline_dividers_override = ['◗', '◗', '◖', '◖']
+" HTML indentation 
+let g:html_indent_inctags = "html,body,head,tbody"
+let g:html_indent_script1 = "inc"
+let g:html_indent_style1 = "inc"
+
+" Setting the SignColumn to background color.
+highlight clear SignColumn
+
+" Disable GitGutter by default.
+let g:gitgutter_enabled = 0

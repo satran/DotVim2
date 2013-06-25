@@ -35,12 +35,12 @@ highlight StatusLine                guifg=#888888 guibg=#ffffff
 highlight StatusLineNC              guifg=#666666 guibg=#ffffff
 hi VertSplit                        guifg=#afafaf guibg=NONE gui=NONE 
 
-highlight Comment                   guifg=#999999 guibg=#eeeeee gui=italic
+highlight Comment                   guifg=#999999 guibg=NONE gui=italic
 highlight Constant                  guifg=#d44950 guibg=NONE
 highlight Error                     guifg=#f9f2ce guibg=#f9323a
 highlight Identifier                guifg=#3a1d72 guibg=NONE              
 highlight Number                    guifg=#7653c1 guibg=#f3f2ff
-highlight PreProc                   guifg=#222222 guibg=#eeeeee
+highlight PreProc                   guifg=#222222 guibg=NONE
 highlight Special                   guifg=#2f6f9f guibg=NONE              
 highlight Statement                 guifg=#2f6f9f guibg=#f4faff gui=NONE
 highlight Type                      guifg=#699d36 guibg=NONE    gui=NONE
@@ -67,3 +67,10 @@ highlight NERDTreeOpenable                guifg=#aabbcc guibg=NONE
 
 " Column 
 highlight ColorColumn ctermbg=lightgrey guibg=#efefef
+
+hi DiffAdd guibg=#E3FEE4
+hi DiffChange guibg=#FFE4E4
+hi DiffText guibg=#E3FEE4
+hi DiffDelete guibg=#FFE4E4
+
+"Grey colour F1F1F1

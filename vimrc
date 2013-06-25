@@ -12,9 +12,10 @@ syntax on
 filetype on
 filetype plugin indent on
 
-" set background=dark
 colorscheme Tomorrow
-" colorscheme Tomorrow-Night
+if has("gui_running")
+    colorscheme tutticolori
+endif
 
 " Source the respective files. This works only for UNIX and Linux systems not
 " Windows.

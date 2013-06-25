@@ -121,3 +121,8 @@ noremap <leader>8 :set colorcolumn=80<CR>
 
 " Toggle solarized background
 call togglebg#map("<F5>")
+
+noremap <leader>gi <Esc>:GitGutterToggle<CR>
+noremap <leader>gn <Esc>:GitGutterNextHunk<CR>
+noremap <leader>gp <Esc>:GitGutterPrevHunk<CR>
+noremap <leader>gl <Esc>:GitGutterLineHighlightsToggle<CR>
