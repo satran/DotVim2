@@ -41,16 +41,14 @@ nnoremap <leader>g :GundoToggle<CR>
 
 " Showing Invisibles
 " Shortcut to rapidly toggle `set list`
-nnoremap <leader>l :set list<CR>
+nnoremap <leader>l :set list<CR> 
 
 "Rope settings
 " Jump to the definition of whatever the cursor is on
 map <leader>j :RopeGotoDefinition<CR>
-map <C-g> <Esc>:RopeGotoDefinition<CR>
 
 " Command-t
 map <leader>t :CommandT<CR>
-map <C-t> :CommandT<CR>
 
 " Command-b
 map <leader>b :CommandTBuffer<CR>
@@ -62,7 +60,10 @@ map <C-/> <Esc>gcc<CR>
 map <leader><space> :nohl<CR>
 
 " Map F8 to Toggle tags.
-noremap <F8> <Esc>:TagbarToggle<CR>
+noremap <leader>ct <Esc>:TagbarToggle<CR>
+
+" Call to generate ctags for the current directory
+noremap <leader>at <Esc>:!echo "Generating tags...";/usr/local/bin/ctags -R --extra=+q /usr/local/include --extra=+q /usr/include --extra=+q ./include<CR><CR>
 
 " Close the current buffer.
 nnoremap <C-q> <Esc>:bd<CR>
@@ -76,7 +77,7 @@ nnoremap <C-q> <Esc>:bd<CR>
 inoremap <C-f> <Esc>la
 
 " Clear end spaces
-map <leader>c <Esc>:%s/\s\+$//g<CR>
+map <leader>cl <Esc>:%s/\s\+$//g<CR>
 
 " Map to close window
 map <leader>x <Esc>:clos<CR>
