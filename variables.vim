@@ -49,7 +49,7 @@ set hlsearch        "Highlight search things
 set incsearch
 
 " Set this for Commnd-T plugin to ignore hidden files.
-set wildignore+=*.pyc,*.png,*.jpg,*.jpeg,*.gif
+set wildignore+=*.o,*.git,build/*,*.pyc,*.png,*.jpg,*.jpeg,*.gif
 
 " ==================================================================================
 " GUI Settings
@@ -78,6 +78,8 @@ let g:netrw_list_hide         = '.*\.pyc,.DS_Store,.git,.ropeproject'
 
 " Ctags for Tagbar
 let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
+set tags+=/usr/include/tags
+set tags+=/usr/local/include/tags
 
 " HTML indentation 
 let g:html_indent_inctags = "html,body,head,tbody"
@@ -89,3 +91,11 @@ highlight clear SignColumn
 
 " Disable GitGutter by default.
 let g:gitgutter_enabled = 0
+
+" Set make for cmake folder
+set makeprg=cd\ build&&make
+
+" Set folds
+set foldcolumn=1
+set foldmethod=syntax
+set foldlevelstart=99           " Open all folds when opening a file.
