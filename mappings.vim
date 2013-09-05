@@ -96,7 +96,7 @@ map <leader>ee <Esc>:SyntasticToggleMode<CR>
 map <leader>ec <Esc>:SyntasticCheck<CR>
 
 " Map for grep under word
-map <leader>* "zyw:exec "grep -r ".@z." *"<CR>
+map <leader>* "zyw:exec "grep --exclude-dir=build --exclude-dir=.git -rIn ".@z." *"<CR>:copen<CR>
 
 " Map for ColorToggle
 map <F2> <Esc>:ColorToggle<CR>
