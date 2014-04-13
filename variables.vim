@@ -60,7 +60,7 @@ if has("gui_running")
     set guioptions-=r
     set guioptions-=L
     set guioptions+=a
-    set gfn=Meslo\ LG\ S:h12
+    set gfn=Menlo:h12
     set listchars=tab:▸\ ,eol:¬         " Invisibles using the Textmate style
     set shell=bash
 endif
