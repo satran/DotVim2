@@ -17,8 +17,8 @@ hi LineNr guifg=#93a1a1 ctermfg=245
 
 hi CursorColumn  guifg=#586e75 guibg=#FDF6E5 ctermfg=240 ctermbg=none
 hi MatchParen   guifg=black guibg=#eee8d5 ctermfg=0  ctermbg=187
-hi Pmenu   guifg=#586e75  guibg=#FDF6E5 ctermfg=240 ctermbg=none
-hi PmenuSel   guifg=#586e75  guibg=#FDF6E5 ctermfg=240 ctermbg=none
+hi Pmenu gui=none guibg=#eee8d5 cterm=none ctermbg=187
+hi PmenuSel guibg=#586e75 guifg=white gui=none cterm=none ctermbg=240 ctermfg=white
 hi Directory   guifg=#586e75 guibg=#FDF6E5 ctermfg=240 ctermbg=none
 hi Folded  guifg=#586e75 guibg=#FDF6E5 ctermfg=240 ctermbg=none
 hi FoldColumn  guifg=#586e75 guibg=#FDF6E5 ctermfg=240 ctermbg=none
