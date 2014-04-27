@@ -38,9 +38,9 @@ nnoremap <leader>g :GundoToggle<CR>
 
 " Showing Invisibles
 " Shortcut to rapidly toggle `set list`
-nnoremap <leader>l :set list<CR> 
+nnoremap <leader>l :set list<CR>
 
-"Rope settings
+" Rope settings
 " Jump to the definition of whatever the cursor is on
 map <leader>j :RopeGotoDefinition<CR>
 
@@ -50,13 +50,10 @@ map <leader>t :CommandT<CR>
 " Command-b
 map <leader>b :CommandTBuffer<CR>
 
-" Command-/
-map <C-/> <Esc>gcc<CR>
-
 " Disable search highlight
 map <leader><space> :nohl<CR>
 
-" Map F8 to Toggle tags.
+" Toggle tags.
 noremap <leader>ct <Esc>:TagbarToggle<CR>
 
 " Call to generate ctags for the current directory
@@ -76,9 +73,6 @@ map <leader>x <Esc>:clos<CR>
 
 " Map to insert python debugger
 map <C-d> <Esc>o# DEBUGGER!<CR>import pdb; pdb.set_trace()<Esc>
-
-" Map to close the python error screen
-map <C-q> <Esc><C>wj:clos<CR>
 
 " Map for grep under word
 map <leader>* "zyw:exec "grep --exclude-dir=build --exclude-dir=.git -rIn ".@z." *"<CR>:copen<CR>

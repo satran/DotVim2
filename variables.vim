@@ -19,12 +19,6 @@ set cursorline
 set noerrorbells " don't make noise
 set ofu=syntaxcomplete
 
-" Tabs and spaces
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set expandtab
-
 set autoindent
 set number
 set modeline
@@ -70,7 +64,6 @@ set laststatus=2
 
 " Hide .pyc in File browser and NERDTree
 let g:explHideFiles='^\.,.*.pyc$'
-let NERDTreeIgnore=['\.pyc$', '\~$', 'PYSMELLTAG']
 
 "Setting for the File Browser
 let g:netrw_liststyle         = 3
@@ -88,14 +81,3 @@ let g:html_indent_style1 = "inc"
 
 " Setting the SignColumn to background color.
 highlight clear SignColumn
-
-" Disable GitGutter by default.
-let g:gitgutter_enabled = 0
-
-" Set make for cmake folder
-set makeprg=cd\ build&&make
-
-" Set folds
-set foldcolumn=1
-set foldmethod=syntax
-set foldlevelstart=99           " Open all folds when opening a file.

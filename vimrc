@@ -2,20 +2,17 @@ set nocompatible 		" Don't be compatible with vi
 
 " Load pathogen with docs with all plugins
 runtime bundle/vim-pathogen/autoload/pathogen.vim
+syntax on
 filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 call pathogen#infect()
 Helptags    " Load the help tags
 
-syntax on
 filetype on
 filetype plugin indent on
 
-colorscheme plum
-" if has("gui_running")
-"     colorscheme tutticolori
-" endif
+colorscheme acme
 
 " Source the respective files. This works only for UNIX and Linux systems not
 " Windows.

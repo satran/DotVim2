@@ -1,6 +1,6 @@
 " Open file in Browser
 " map <Leader>p :!open -a Safari %<CR><CR>
-map <Leader>p :!open -a "Google Chrome" %<CR><CR>
+map <Leader>p :!open -a "FirefoxNightly" %<CR><CR>
 
 " Open markdown with Mou
 map <Leader>md :!open -a Mou %<CR><CR>
