@@ -33,9 +33,6 @@ noremap <leader>yy "*y
 nnoremap <leader>nn <Esc>:bn<CR>
 nnoremap <leader>nb <Esc>:bp<CR>
 
-" Gundo plugin
-nnoremap <leader>g :GundoToggle<CR>
-
 " Showing Invisibles
 " Shortcut to rapidly toggle `set list`
 nnoremap <leader>l :set list<CR>
@@ -44,17 +41,8 @@ nnoremap <leader>l :set list<CR>
 " Jump to the definition of whatever the cursor is on
 map <leader>j :RopeGotoDefinition<CR>
 
-" Command-t
-map <leader>t :CommandT<CR>
-
-" Command-b
-map <leader>b :CommandTBuffer<CR>
-
 " Disable search highlight
 map <leader><space> :nohl<CR>
-
-" Toggle tags.
-noremap <leader>ct <Esc>:TagbarToggle<CR>
 
 " Call to generate ctags for the current directory
 noremap <leader>at <Esc>:!echo "Generating tags...";/usr/local/bin/ctags -R --extra=+q /usr/local/include --extra=+q /usr/include --extra=+q ./include<CR><CR>
@@ -92,6 +80,3 @@ nnoremap <leader>d :e .<CR>
 
 " Sets colorcolumn to 80 characters.
 noremap <leader>8 :set colorcolumn=80<CR>
-
-" Toggle solarized background
-call togglebg#map("<F5>")
