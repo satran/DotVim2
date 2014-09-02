@@ -80,3 +80,6 @@ nnoremap <leader>d :e .<CR>
 
 " Sets colorcolumn to 80 characters.
 noremap <leader>8 :set colorcolumn=80<CR>
+
+" Sudo write to files
+cmap w!! %!sudo tee > /dev/null %
