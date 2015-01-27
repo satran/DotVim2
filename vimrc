@@ -12,10 +12,9 @@ syntax on
 filetype on
 filetype plugin indent on
 
-colorscheme plum
-" if has("gui_running")
-"     colorscheme tutticolori
-" endif
+if has("gui_running")
+    colorscheme tutticolori
+endif
 
 " Source the respective files. This works only for UNIX and Linux systems not
 " Windows.
